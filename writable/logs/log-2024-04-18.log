@@ -1,0 +1,100 @@
+ERROR - 2024-04-18 17:28:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `hora` < IS NULL' at line 4 in C:\xampp\htdocs\Topicos2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Topicos2024\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `altitud...', 0)
+#1 C:\xampp\htdocs\Topicos2024\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `altitud...')
+#2 C:\xampp\htdocs\Topicos2024\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `altitud...')
+#3 C:\xampp\htdocs\Topicos2024\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `altitud...', Array, false)
+#4 C:\xampp\htdocs\Topicos2024\app\Models\ClimaModel.php(104): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Topicos2024\app\Controllers\Clima.php(48): App\Models\ClimaModel->getClimaByUbicacionHora()
+#6 C:\xampp\htdocs\Topicos2024\system\CodeIgniter.php(919): App\Controllers\Clima->getClimaByUbicacionHora()
+#7 C:\xampp\htdocs\Topicos2024\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+#8 C:\xampp\htdocs\Topicos2024\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Topicos2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Topicos2024\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-04-18 17:28:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `hora` < IS NULL' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `altitud`, `fecha`, `temperatura`, `sensacionTermica`
+FROM `clima`
+WHERE `ubicacion` = :ubicacion:
+AND `hora` > IS NULL
+AND `hora` < IS NULL', [...], false)
+ 2 APPPATH\Models\ClimaModel.php(104): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Clima.php(48): App\Models\ClimaModel->getClimaByUbicacionHora()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->getClimaByUbicacionHora()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')
+ERROR - 2024-04-18 17:33:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 6 in C:\xampp\htdocs\Topicos2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Topicos2024\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `latitud...', 0)
+#1 C:\xampp\htdocs\Topicos2024\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `latitud...')
+#2 C:\xampp\htdocs\Topicos2024\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `latitud...')
+#3 C:\xampp\htdocs\Topicos2024\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `latitud...', Array, false)
+#4 C:\xampp\htdocs\Topicos2024\app\Models\ClimaModel.php(159): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Topicos2024\app\Controllers\Clima.php(78): App\Models\ClimaModel->getClimaByTipoClimaUbicacionTemperatura()
+#6 C:\xampp\htdocs\Topicos2024\system\CodeIgniter.php(919): App\Controllers\Clima->getClimaByTipoClimaUbicacionTemperatura()
+#7 C:\xampp\htdocs\Topicos2024\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+#8 C:\xampp\htdocs\Topicos2024\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Topicos2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Topicos2024\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-04-18 17:33:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 6
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `latitud`, `longitud`, `altitud`, `fecha`, `hora`, `temperatura`
+FROM `clima`
+JOIN `tipoclima` ON `clima`.`tipo` = `tipoclima`.`idTipo`
+WHERE `tipoclima`.`tipo` = :tipoclima.tipo:
+AND `ubicacion` = :ubicacion:
+AND `temperatura` > IS NULL', [...], false)
+ 2 APPPATH\Models\ClimaModel.php(159): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Clima.php(78): App\Models\ClimaModel->getClimaByTipoClimaUbicacionTemperatura()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->getClimaByTipoClimaUbicacionTemperatura()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')
+ERROR - 2024-04-18 17:34:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 6 in C:\xampp\htdocs\Topicos2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Topicos2024\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `latitud...', 0)
+#1 C:\xampp\htdocs\Topicos2024\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `latitud...')
+#2 C:\xampp\htdocs\Topicos2024\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `latitud...')
+#3 C:\xampp\htdocs\Topicos2024\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `latitud...', Array, false)
+#4 C:\xampp\htdocs\Topicos2024\app\Models\ClimaModel.php(159): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Topicos2024\app\Controllers\Clima.php(78): App\Models\ClimaModel->getClimaByTipoClimaUbicacionTemperatura()
+#6 C:\xampp\htdocs\Topicos2024\system\CodeIgniter.php(919): App\Controllers\Clima->getClimaByTipoClimaUbicacionTemperatura()
+#7 C:\xampp\htdocs\Topicos2024\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+#8 C:\xampp\htdocs\Topicos2024\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Topicos2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Topicos2024\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-04-18 17:34:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 6
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `latitud`, `longitud`, `altitud`, `fecha`, `hora`, `temperatura`
+FROM `clima`
+JOIN `tipoclima` ON `clima`.`tipo` = `tipoclima`.`idTipo`
+WHERE `tipoclima`.`tipo` = :tipoclima.tipo:
+AND `ubicacion` = :ubicacion:
+AND `temperatura` > IS NULL', [...], false)
+ 2 APPPATH\Models\ClimaModel.php(159): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Clima.php(78): App\Models\ClimaModel->getClimaByTipoClimaUbicacionTemperatura()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->getClimaByTipoClimaUbicacionTemperatura()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')
+CRITICAL - 2024-04-18 17:41:51 --> Undefined variable $datos
+in APPPATH\Views\datos.php on line 2.
+ 1 APPPATH\Views\datos.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\Topicos2024\\app\\Views\\datos.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Topicos2024\\app\\Views\\datos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('datos', [], true)
+ 5 APPPATH\Controllers\Clima.php(24): view('datos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->getUbicaciones()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')

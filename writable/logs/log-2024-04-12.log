@@ -1,0 +1,112 @@
+CRITICAL - 2024-04-12 01:43:11 --> Invalid file: "common/head.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('common/head.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('common/head', [], true)
+ 3 APPPATH\Controllers\Home.php(11): view('common/head')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')
+CRITICAL - 2024-04-12 01:44:06 --> The route for "welcome_message" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('welcome_message')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Home.php(9): redirect('welcome_message')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')
+CRITICAL - 2024-04-12 01:44:30 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\xampp\htdocs\Topicos2024\system\Model.php on line 871
+in SYSTEMPATH\Database\BaseBuilder.php on line 1607.
+ 1 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get('ubicacion')
+ 2 APPPATH\Controllers\Clima.php(17): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->getUbicaciones()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')
+CRITICAL - 2024-04-12 17:30:38 --> Call to a member function getResult() on array
+in APPPATH\Controllers\Clima.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->getUbicaciones()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')
+CRITICAL - 2024-04-12 17:30:49 --> Undefined variable $ubicaciones
+in APPPATH\Views\datos.php on line 2.
+ 1 APPPATH\Views\datos.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ubicaciones', 'C:\\xampp\\htdocs\\Topicos2024\\app\\Views\\datos.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Topicos2024\\app\\Views\\datos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('datos', [], true)
+ 5 APPPATH\Controllers\Clima.php(18): view('datos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->getUbicaciones()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')
+CRITICAL - 2024-04-12 17:31:00 --> Undefined variable $query
+in APPPATH\Views\datos.php on line 2.
+ 1 APPPATH\Views\datos.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'C:\\xampp\\htdocs\\Topicos2024\\app\\Views\\datos.php', 2)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Topicos2024\\app\\Views\\datos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('datos', [], true)
+ 5 APPPATH\Controllers\Clima.php(18): view('datos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->getUbicaciones()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')
+CRITICAL - 2024-04-12 17:43:55 --> Undefined variable $datos
+in APPPATH\Views\datos.php on line 3.
+ 1 APPPATH\Views\datos.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\Topicos2024\\app\\Views\\datos.php', 3)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Topicos2024\\app\\Views\\datos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('datos', [], true)
+ 5 APPPATH\Controllers\Clima.php(18): view('datos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->getUbicaciones()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')
+CRITICAL - 2024-04-12 17:44:01 --> Undefined variable $datos
+in APPPATH\Views\datos.php on line 3.
+ 1 APPPATH\Views\datos.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\Topicos2024\\app\\Views\\datos.php', 3)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\Topicos2024\\app\\Views\\datos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('datos', [], true)
+ 5 APPPATH\Controllers\Clima.php(18): view('datos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->getUbicaciones()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')
+CRITICAL - 2024-04-12 17:53:18 --> App\Models\ClimaModel::getClimaByCP(): Argument #1 ($cp) must be of type int, CodeIgniter\HTTP\IncomingRequest given, called in C:\xampp\htdocs\Topicos2024\app\Controllers\Clima.php on line 27
+in APPPATH\Models\ClimaModel.php on line 54.
+ 1 APPPATH\Controllers\Clima.php(27): App\Models\ClimaModel->getClimaByCP(Object(CodeIgniter\HTTP\IncomingRequest))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->getClimaByCP()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')
+CRITICAL - 2024-04-12 17:54:18 --> Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('SELECT `latitud`
+FROM `clima`
+WHERE `CP` = :CP:', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('SELECT `latitud`
+FROM `clima`
+WHERE `CP` = :CP:', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `latitud`
+FROM `clima`
+WHERE `CP` = :CP:', [...], false)
+ 6 APPPATH\Models\ClimaModel.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\Clima.php(28): App\Models\ClimaModel->getClimaByCP(Object(CodeIgniter\HTTP\IncomingRequest))
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->getClimaByCP()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Topicos2024\\public\\index.php')

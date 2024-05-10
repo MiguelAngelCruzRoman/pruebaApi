@@ -1,0 +1,65 @@
+ERROR - 2024-04-19 17:37:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `temperatura` > IS NULL' at line 3 in C:\Users\Moisés David\Desktop\ApiClima\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\ApiClima\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ubicaci...', 0)
+#1 C:\Users\Moisés David\Desktop\ApiClima\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ubicaci...')
+#2 C:\Users\Moisés David\Desktop\ApiClima\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ubicaci...')
+#3 C:\Users\Moisés David\Desktop\ApiClima\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ubicaci...', Array, false)
+#4 C:\Users\Moisés David\Desktop\ApiClima\app\Models\ClimaModel.php(114): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Moisés David\Desktop\ApiClima\app\Controllers\Clima.php(105): App\Models\ClimaModel->getClimaByTemperatura()
+#6 C:\Users\Moisés David\Desktop\ApiClima\system\CodeIgniter.php(919): App\Controllers\Clima->getClimaByTemperatura()
+#7 C:\Users\Moisés David\Desktop\ApiClima\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+#8 C:\Users\Moisés David\Desktop\ApiClima\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Moisés David\Desktop\ApiClima\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Moisés David\Desktop\ApiClima\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#11 {main}
+CRITICAL - 2024-04-19 17:37:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+AND `temperatura` > IS NULL' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ubicacion`, `latitud`, `longitud`, `altitud`, `fecha`, `hora`, `sensacionTermica`
+FROM `clima`
+WHERE `temperatura` < IS NULL
+AND `temperatura` > IS NULL', [], false)
+ 2 APPPATH\Models\ClimaModel.php(114): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Clima.php(105): App\Models\ClimaModel->getClimaByTemperatura()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->getClimaByTemperatura()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\ApiClima\\public\\index.php')
+CRITICAL - 2024-04-19 18:49:57 --> Undefined variable $ubicacion
+in APPPATH\Views\documentacion.php on line 18.
+ 1 APPPATH\Views\documentacion.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ubicacion', 'C:\\Users\\Moisés David\\Desktop\\ApiClima\\app\\Views\\documentacion.php', 18)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\ApiClima\\app\\Views\\documentacion.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('documentacion', [], true)
+ 5 APPPATH\Controllers\Clima.php(14): view('documentacion')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\ApiClima\\public\\index.php')
+CRITICAL - 2024-04-19 18:50:03 --> Undefined variable $ubicacion
+in APPPATH\Views\documentacion.php on line 18.
+ 1 APPPATH\Views\documentacion.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ubicacion', 'C:\\Users\\Moisés David\\Desktop\\ApiClima\\app\\Views\\documentacion.php', 18)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\ApiClima\\app\\Views\\documentacion.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('documentacion', [], true)
+ 5 APPPATH\Controllers\Clima.php(14): view('documentacion')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\ApiClima\\public\\index.php')
+CRITICAL - 2024-04-19 18:50:05 --> Undefined variable $ubicaciones
+in APPPATH\Views\documentacion.php on line 18.
+ 1 APPPATH\Views\documentacion.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ubicaciones', 'C:\\Users\\Moisés David\\Desktop\\ApiClima\\app\\Views\\documentacion.php', 18)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Moisés David\\Desktop\\ApiClima\\app\\Views\\documentacion.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('documentacion', [], true)
+ 5 APPPATH\Controllers\Clima.php(14): view('documentacion')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clima->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clima))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\ApiClima\\public\\index.php')

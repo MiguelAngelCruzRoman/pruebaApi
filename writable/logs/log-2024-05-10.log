@@ -1,0 +1,221 @@
+CRITICAL - 2024-05-10 17:31:15 --> MongoDB\Collection::find(): Argument #2 ($options) must be of type array, string given, called in C:\Users\ardil\Downloads\TopicosBD2024_Proyectos\ProyectoFinal\API_Hoteles_CodeIgniter\app\Models\ClientesModel.php on line 26
+in VENDORPATH\mongodb\mongodb\src\Collection.php on line 639.
+ 1 APPPATH\Models\ClientesModel.php(26): MongoDB\Collection->find('primerNombre', 'Rebeca')
+ 2 APPPATH\Controllers\Clientes.php(31): App\Models\ClientesModel->getNombre()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->getNombre()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 17:31:18 --> MongoDB\Collection::find(): Argument #2 ($options) must be of type array, string given, called in C:\Users\ardil\Downloads\TopicosBD2024_Proyectos\ProyectoFinal\API_Hoteles_CodeIgniter\app\Models\ClientesModel.php on line 26
+in VENDORPATH\mongodb\mongodb\src\Collection.php on line 639.
+ 1 APPPATH\Models\ClientesModel.php(26): MongoDB\Collection->find('primerNombre', 'Rebeca')
+ 2 APPPATH\Controllers\Clientes.php(31): App\Models\ClientesModel->getNombre()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->getNombre()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 17:32:07 --> Call to undefined method MongoDB\Collection::where()
+in APPPATH\Models\ClientesModel.php on line 26.
+ 1 APPPATH\Controllers\Clientes.php(31): App\Models\ClientesModel->getNombre()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->getNombre()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 17:32:53 --> MongoDB\Collection::findOne(): Argument #2 ($options) must be of type array, string given, called in C:\Users\ardil\Downloads\TopicosBD2024_Proyectos\ProyectoFinal\API_Hoteles_CodeIgniter\app\Models\ClientesModel.php on line 26
+in VENDORPATH\mongodb\mongodb\src\Collection.php on line 661.
+ 1 APPPATH\Models\ClientesModel.php(26): MongoDB\Collection->findOne('primerNombre', 'Rebeca')
+ 2 APPPATH\Controllers\Clientes.php(31): App\Models\ClientesModel->getNombre()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->getNombre()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 17:36:20 --> $pipeline is not a valid aggregation pipeline
+in VENDORPATH\mongodb\mongodb\src\Operation\Aggregate.php on line 132.
+ 1 VENDORPATH\mongodb\mongodb\src\Collection.php(240): MongoDB\Operation\Aggregate->__construct('apiHotel', 'clientes', [...], [...])
+ 2 APPPATH\Models\ClientesModel.php(26): MongoDB\Collection->aggregate([...])
+ 3 APPPATH\Controllers\Clientes.php(31): App\Models\ClientesModel->getNombre()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->getNombre()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 17:36:43 --> $pipeline is not a valid aggregation pipeline
+in VENDORPATH\mongodb\mongodb\src\Operation\Aggregate.php on line 132.
+ 1 VENDORPATH\mongodb\mongodb\src\Collection.php(240): MongoDB\Operation\Aggregate->__construct('apiHotel', 'clientes', [...], [...])
+ 2 APPPATH\Models\ClientesModel.php(26): MongoDB\Collection->aggregate([...])
+ 3 APPPATH\Controllers\Clientes.php(31): App\Models\ClientesModel->getNombre()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->getNombre()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 17:37:40 --> MongoDB\Collection::aggregate(): Argument #1 ($pipeline) must be of type array, string given, called in C:\Users\ardil\Downloads\TopicosBD2024_Proyectos\ProyectoFinal\API_Hoteles_CodeIgniter\app\Models\ClientesModel.php on line 26
+in VENDORPATH\mongodb\mongodb\src\Collection.php on line 217.
+ 1 APPPATH\Models\ClientesModel.php(26): MongoDB\Collection->aggregate('apiHoteles', 'clientes', [...])
+ 2 APPPATH\Controllers\Clientes.php(31): App\Models\ClientesModel->getNombre()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->getNombre()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 17:40:09 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ClientesModel.php(26): CodeIgniter\Model->__get('load')
+ 4 APPPATH\Controllers\Clientes.php(31): App\Models\ClientesModel->getNombre()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->getNombre()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 18:03:05 --> Too few arguments to function App\Controllers\Clientes::getNombre(), 0 passed in C:\Users\ardil\Downloads\TopicosBD2024_Proyectos\ProyectoFinal\API_Hoteles_CodeIgniter\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Clientes.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Clientes->getNombre()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 18:33:00 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Comentarios.php(30): CodeIgniter\Model->__call('getClienteNombre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Comentarios->getComentarioCalificacion('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comentarios))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 18:33:35 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Comentarios.php(30): CodeIgniter\Model->__call('getClienteNombre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Comentarios->getComentarioCalificacion('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comentarios))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 18:35:03 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Comentarios.php(30): CodeIgniter\Model->__call('getClienteNombre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Comentarios->getComentarioCalificacion('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comentarios))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 18:39:12 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Comentarios.php(30): CodeIgniter\Model->__call('getClienteNombre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Comentarios->getComentarioCalificacion('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comentarios))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 23:08:05 --> No suitable servers found (`serverSelectionTryOnce` set): [Failed to resolve 'yomerocluster.eit2hnw.mongodb.net']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 598.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(598): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(646): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ComentariosModel.php(20): MongoDB\Collection->find()
+ 4 APPPATH\Controllers\Comentarios.php(16): App\Models\ComentariosModel->index()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Comentarios->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comentarios))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 23:08:06 --> No suitable servers found (`serverSelectionTryOnce` set): [Failed to resolve 'yomerocluster.eit2hnw.mongodb.net']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 598.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(598): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(646): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ComentariosModel.php(20): MongoDB\Collection->find()
+ 4 APPPATH\Controllers\Comentarios.php(16): App\Models\ComentariosModel->index()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Comentarios->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comentarios))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 23:08:09 --> No suitable servers found (`serverSelectionTryOnce` set): [Failed to resolve 'yomerocluster.eit2hnw.mongodb.net']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 598.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(598): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(646): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ComentariosModel.php(20): MongoDB\Collection->find()
+ 4 APPPATH\Controllers\Comentarios.php(16): App\Models\ComentariosModel->index()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Comentarios->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comentarios))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 23:08:26 --> No suitable servers found (`serverSelectionTryOnce` set): [Failed to resolve 'yomerocluster.eit2hnw.mongodb.net']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 598.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(598): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(646): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ComentariosModel.php(20): MongoDB\Collection->find()
+ 4 APPPATH\Controllers\Comentarios.php(16): App\Models\ComentariosModel->index()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Comentarios->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comentarios))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 23:08:31 --> No suitable servers found (`serverSelectionTryOnce` set): [Failed to resolve 'yomerocluster.eit2hnw.mongodb.net']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 598.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(598): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(646): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ComentariosModel.php(20): MongoDB\Collection->find()
+ 4 APPPATH\Controllers\Comentarios.php(16): App\Models\ComentariosModel->index()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Comentarios->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comentarios))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 23:08:50 --> No suitable servers found (`serverSelectionTryOnce` set): [Failed to resolve 'yomerocluster.eit2hnw.mongodb.net']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 598.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(598): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(646): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ComentariosModel.php(21): MongoDB\Collection->find()
+ 4 APPPATH\Controllers\Comentarios.php(16): App\Models\ComentariosModel->index()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Comentarios->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comentarios))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 23:09:12 --> No suitable servers found (`serverSelectionTryOnce` set): [Failed to resolve 'yomerocluster.eit2hnw.mongodb.net']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 598.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(598): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(646): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ComentariosModel.php(20): MongoDB\Collection->find()
+ 4 APPPATH\Controllers\Comentarios.php(16): App\Models\ComentariosModel->index()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Comentarios->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comentarios))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 23:15:02 --> No suitable servers found (`serverSelectionTryOnce` set): [Failed to resolve 'yomerocluster.eit2hnw.mongodb.net']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 598.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(598): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(646): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ComentariosModel.php(20): MongoDB\Collection->find()
+ 4 APPPATH\Controllers\Comentarios.php(16): App\Models\ComentariosModel->index()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Comentarios->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comentarios))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
+CRITICAL - 2024-05-10 23:15:15 --> No suitable servers found (`serverSelectionTryOnce` set): [Failed to resolve 'yomerocluster.eit2hnw.mongodb.net']
+in VENDORPATH\mongodb\mongodb\src\functions.php on line 598.
+ 1 VENDORPATH\mongodb\mongodb\src\functions.php(598): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+ 2 VENDORPATH\mongodb\mongodb\src\Collection.php(646): MongoDB\select_server(Object(MongoDB\Driver\Manager), [...])
+ 3 APPPATH\Models\ComentariosModel.php(20): MongoDB\Collection->find()
+ 4 APPPATH\Controllers\Comentarios.php(16): App\Models\ComentariosModel->index()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Comentarios->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comentarios))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\TopicosBD2024_Proyectos\\ProyectoFinal\\API_Hoteles_CodeIgniter\\public\\index.php')
